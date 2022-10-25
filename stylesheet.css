@@ -1,0 +1,51 @@
+body{
+  background-color: #0f0f0f;
+  color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  font-family: "Quantico", sans-serif;
+  background-color: #fdfdfd;
+  color: #0f0f0f;
+  text-align: center;
+  line-height: 0;
+  font-size: 8px;
+}
+header.p{
+  text-align: center;
+}
+
+main{
+  padding: 2rem;
+  flex: 1;
+}
+
+#searchbox{
+  border-color: transparent;
+}
+#restriction{
+  font-size: 1.8rem;
+  font-weight: bold;
+  vertical-align: middle;
+  border-radius: 0;
+  padding: 0.3rem;
+}
+#search{
+  font-size: 1.5rem;
+  vertical-align: middle;
+  border-radius: 0;
+  padding: 0.3rem;
+}
+
+footer{
+  background-color: #fdfdfd;
+  color: #0f0f0f;
+  font-family: "Quantico", sans-serif;
+  text-align: center;
+  font-size: 8px;
+}

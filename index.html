@@ -1,2 +1,45 @@
 <!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <link href="images/favicon.ico" rel="icon">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quantico">
+    <script src="scripts/main.js" defer></script>
+  </head>
 
+  <body>
+    <header>
+      <img src="images/header.svg" 
+      alt="WWW..."
+      width="56" height="56">
+      <p>WideWordWanderer</p>
+    </header>
+    <main>
+      <p id="discription">
+        特定の条件を満たす日本語の単語を検索することができます。謎解きやクロスワードの作成等にお使いください。データはぶたさんの「豚辞書【第14版】」をお借りしています。
+        <br>※小さい文字は大きく表示されます。（例：ふぁんでーしょん→ふあんでーしよん）
+      </p>
+      
+      <p id="mode_discription">
+        "？(全角)"および大きい文字のひらがなを用いて、条件に合う単語を検索します。
+        <br>
+        "？"は任意の１文字を表します。(例)う？ぎ→うさぎ、うなぎ、うわぎ
+      </p>
+
+      <div id="searchbox">
+        <label for="restriction">条件</label>
+        <input type="text" id="restriction" name="rst" size="20">
+        <button id="search" type="button">検索</button>
+      </div>
+
+      <div id="results">
+        <p id="words"></p>
+      </div>
+
+    </main>
+    <footer>
+      <p>Created by 9489yamamayumi</p>
+    </footer>
+  </body>
+</html>
