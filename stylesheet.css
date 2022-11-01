@@ -14,14 +14,14 @@ header{
   color: #0f0f0f;
   text-align: center;
   line-height: 0;
-  font-size: 8px;
+  font-size: 10px;
 }
 header.p{
   text-align: center;
 }
 
 main{
-  padding: 2rem;
+  padding: 2rem 3rem;
   flex: 1;
 }
 
