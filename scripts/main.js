@@ -1,6 +1,5 @@
 const dict =
-`
-あー
+`あー
 あーういんあれん
 あーかいば
 あーかいばー
@@ -201091,15 +201090,13 @@ const dict =
 わんれい
 わんれん
 わんれんぐす
-わんわん
-`;
+わんわん`;
 
 /*検索*/
 function searchWord(){
   let rst = document.getElementById("restriction").value; 
   rst = "^" + rst.replace(/？/g, '.') + "$";
   let re = RegExp(rst,"gm");
-  /*console.log(rst,re);*/
   let words = dict.match(re);
   let para = document.getElementById("words");
   let result;
@@ -201108,17 +201105,12 @@ function searchWord(){
   }
   else{
     result = words.length+"個の単語が見つかりました！\n";
-  }
-  /*console.log(result);*/
-  words.forEach(word => {
-    result += word + "\n";
-  });
-  para.innerText = result;
+    words.forEach(word => {
+      result += word + "\n";
+    });
 
-  /*
-  console.log(words);
-  console.log(words.length);
-  */
+  }
+  para.innerText = result;
 }
 const search = document.getElementById("search");
 search.addEventListener("click", searchWord);
